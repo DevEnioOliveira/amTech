@@ -1,0 +1,466 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+html,body{
+    height: 100%;
+}
+
+.clearfix{
+    clear: both;
+}
+
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+/*HEADER*/
+
+section.main{
+    background-image: url(../images/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 15px 0;
+    min-height: 800px;
+    position: relative;
+}
+
+.layer{
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+section.main header{
+    position: relative;
+    z-index: 2;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+.icon-social{
+    float: right;
+}
+
+.icon-social a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 15px;
+}
+
+.logo{
+    margin-top: 20px;
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+header nav.mobile {
+    display: none;
+}
+
+
+
+nav.desktop{
+    margin-top: 20px;
+    float: right;
+}
+
+nav.desktop ul{
+    list-style-type: none;
+}
+
+nav.desktop li{
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+nav.desktop a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+.conteudo-header{
+    margin: 90px 0;
+    max-width: 700px;
+    position: relative;
+    z-index: 2;
+}
+.conteudo-header h2{
+    color: white;
+    font-weight: lighter;
+    font-size: 44px;
+}
+
+.conteudo-header p{
+    color: white;
+    margin-top: 18px;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.conteudo-header a{
+    display: block;
+    height: 44px;
+    width: 177px;
+    color: white;
+    background-color: royalblue;
+    border-radius: 80px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 30px;
+    line-height: 44px;
+}
+/*FIM DA HEADER*/
+
+/*INICIO DO CONTEUDO CARDS*/
+
+.chamada-planos{
+    width: 100%;
+    text-align: center;
+    padding: 27px 2%;
+    background: rgb(213, 214, 216);
+}
+
+.chamada-planos h2 {
+    display: inline-block;
+    border-top: 2px solid;
+    font-size: 25px;
+    color: royalblue;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.box-planos{
+    padding: 40px 0;
+}
+
+.box-planos .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-planos-single{
+    width: 33.3%;
+    padding: 0 40px;
+}
+
+.planos-wrapper{
+    width: 100%;
+    border: 1px solid #ccc;
+    min-height: 300px;
+    -webkit-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.75);
+}
+
+.box-planos-single h2{
+    background: royalblue;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    font-weight: lighter;
+}
+
+.pontos-plano{
+    padding: 8px 0 15px 0;
+}
+
+.box-planos-single p{
+    margin-left: 20px;
+    color: #777;
+    font: 17px;
+    margin-top: 8px;
+}
+
+.preco{
+    margin-top: 10px;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.preco h2{
+   display: inline-block;
+   padding: 0 20px;
+   border-top: 1px solid #ccc; 
+   font-size: 24px;
+   background-color: transparent;
+   color: #777;
+}
+
+
+
+/*FIM DO CONTEUDO CARDS*/
+
+/*SESSÃO PARALLAX*/
+
+section.parallax{
+    width: 100%;
+    min-height: 300px;
+    background-image: url(../images/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 40px 0;
+    background-attachment: fixed;
+}
+
+.overlay-parallax{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(3, 3, 3, 0.6);
+}
+
+section.parallax h2{
+    color: white;
+    text-align: center;
+}
+section.parallax p{
+    color: white;
+    margin-top: 15px;
+}
+
+section.parallax .container{
+    position: relative;
+    z-index: 2;
+    max-width: 960px;
+    color: white;
+}
+
+/*FIM SESSÃO PARALLAX*/
+/*INICIO SESSÃO CONTATO E EQUIPE*/
+
+section.sessao-final{
+    padding: 30px 0;
+}
+
+.w50{
+    float: left;
+    width: 50%;
+    padding: 0 20px;
+    margin: 30px 0;
+}
+
+section.sessao-final h2{
+    position: relative;
+    font-weight: lighter;
+    color: #777;
+    font-size: 24px;
+}
+
+section.sessao-final h2 > .border-efeito{
+    width: 50px;
+    height: 2px;
+    background: #777;
+    position: absolute;
+    transition: 0.4s;
+}
+section.sessao-final h2:hover > .border-efeito{
+    width: 100px;  
+}
+
+.contato form{
+    margin-top: 15px;
+}
+
+
+.contato input:not([type=submit]){
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding-left: 8px;
+    margin-top: 10px;
+    display: block;
+    font-size: 15px;
+}
+.contato input:not([type=submit]):focus{
+    outline: 0;
+}
+
+.contato input[type=submit]{
+    cursor: pointer;
+    background-color: royalblue;
+    color: white;
+    border: 0;
+    border-radius: 30px;
+    height: 33px;
+    width: 100px;
+    margin-top: 15px;
+}
+
+.contato textarea{
+    width: 100%;
+    resize: none;
+    height: 120px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.contato textarea:focus{
+    outline: 0;
+}
+
+.time .w50{
+    width: 48%;
+    margin: 15px 1%;
+}
+
+.equipe-single{
+    border: 1px solid #ccc;
+    min-height: 240px;
+    padding: 10px 8px;
+    padding-bottom: 30px;
+    -webkit-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.75);
+}
+
+.equipe-single .box-avatar{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ccc;
+    vertical-align: middle;
+}
+
+.equipe-single .topo-usuario{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.info-usuario{
+    display: inline-block;
+    color: #777;
+    padding-left: 8px;
+    vertical-align: middle;
+}
+
+.usuario-box{
+    color: #777;
+    font-weight: lighter;
+    font-size: 14px;
+    margin-top: 10px;
+}
+/**/
+
+/*FOOTER*/
+
+footer{
+    width: 100%;
+    padding: 10px 2%;
+    background-color: royalblue;
+}
+
+footer p{
+    color: white;
+    font-size: 22*9px;
+    text-align: center;
+    padding-top: 16px;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width:768px){
+
+
+    .conteudo-header{
+        z-index: 1;
+    }
+    
+    header nav.mobile{
+        display: block;
+        float: right;
+        width: 50px;
+        height: 50px;
+        background-size: 100% 100%;
+        cursor: pointer;
+        background-image: url(../images/open-menu.png);
+        position: relative;
+        top: 16px;
+        
+    }
+
+
+    header nav.mobile ul{
+        width: 600px;
+        right: 548px;
+        
+        position: relative;
+        text-align: center;
+        top:60px;
+        z-index: 999;
+        background-color: white;
+        display: none;
+        
+    }
+    
+
+
+    header nav.mobile li{
+        font-size: 18px;
+        padding: 10px 0;
+        padding-left: 100px;
+        list-style-type: none;
+        border: black 1px solid;
+    }
+
+    header nav.mobile li a{
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+       padding-left: 40px;
+         
+    }
+
+    header nav.mobile ul :hover{
+      background-color: #ccc;
+    }
+
+    nav.desktop{
+        display: none;
+    }
+    
+    .box-planos-single{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .w50{
+        width: 100%;
+    }
+
+    .time .w50{
+        width: 100%;
+        margin: 15px 0;
+    }
+}
+
+/*FIM MEDIA QUERIESS*/
+
